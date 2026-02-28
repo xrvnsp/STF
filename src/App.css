@@ -1,0 +1,215 @@
+/* Features Section */
+.bg-white {
+  background-color: var(--bg-card);
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at right center, rgba(204, 41, 54, 0.05) 0%, rgba(204, 41, 54, 0) 50%);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.feature-card {
+  padding: var(--spacing-md);
+  background-color: var(--bg-main);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.feature-icon {
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.feature-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Products Section */
+.section-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.product-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+  background-color: var(--bg-card);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+}
+
+.product-info h3 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--primary);
+}
+
+.product-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.mt-md {
+  margin-top: var(--spacing-md);
+}
+
+/* Jar Mockup */
+.jar-mockup {
+  width: 250px;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+.jar-cap {
+  width: 140px;
+  height: 30px;
+  background: linear-gradient(to bottom, #FFEA70, #FFD23F);
+  border-radius: 8px 8px 0 0;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 5px rgba(255, 255, 255, 0.5);
+  z-index: 2;
+}
+
+.jar-body {
+  width: 200px;
+  height: 320px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.05), inset 5px 5px 15px rgba(255, 255, 255, 0.8);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jar-powder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><rect width="10" height="10" fill="%23D04C22"/><circle cx="2" cy="2" r="1.5" fill="%23B33917"/><circle cx="7" cy="6" r="1" fill="%23E56636"/><circle cx="4" cy="8" r="0.5" fill="%2399280E"/></svg>');
+  z-index: 0;
+  border-radius: 0 0 18px 18px;
+  opacity: 0.95;
+}
+
+.jar-label {
+  width: 90%;
+  height: 65%;
+  background-color: #FDF9F1;
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #EAE0C8;
+}
+
+.label-logo {
+  font-family: var(--font-heading);
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.label-text {
+  font-family: var(--font-body);
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding-top: var(--spacing-xl);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-box {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
