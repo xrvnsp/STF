@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Button from './components/Button';
 import Carousel from './components/Carousel';
+import Testimonials from './components/Testimonials';
 import { ChefHat, Leaf, ShieldCheck, Heart } from 'lucide-react';
 import './App.css';
 
@@ -93,6 +94,8 @@ function App() {
             </div>
           </div>
         </section>
+
+        <Testimonials />
       </main>
 
       <Footer />
