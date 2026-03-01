@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Button from './components/Button';
+import Carousel from './components/Carousel';
 import { ChefHat, Leaf, ShieldCheck, Heart } from 'lucide-react';
 import './App.css';
 
@@ -23,6 +24,10 @@ function App() {
                 <Button variant="primary">Shop Products</Button>
                 <Button variant="secondary">Contact on WhatsApp</Button>
               </div>
+            </div>
+
+            <div className="hero-carousel-wrapper animate-fade-in delay-1">
+              <Carousel />
             </div>
           </div>
         </section>

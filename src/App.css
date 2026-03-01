@@ -10,8 +10,23 @@
   background: radial-gradient(circle at right center, rgba(204, 41, 54, 0.05) 0%, rgba(204, 41, 54, 0) 50%);
 }
 
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
 .hero-content {
-  max-width: 600px;
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero-carousel-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .hero-content h1 {
@@ -198,6 +213,17 @@
   .hero {
     min-height: auto;
     padding-top: var(--spacing-xl);
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-carousel-wrapper {
+    justify-content: center;
+    margin-top: 1rem;
   }
 
   .hero-actions {
