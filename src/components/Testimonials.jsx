@@ -31,6 +31,18 @@ const reviews = [
         name: "Muthu Kumar",
         rating: 5,
         comment: "கலப்படமில்லாத சுவை. உண்மையான தென்னிந்திய மணத்தோடு உள்ளது. (Unadulterated taste. With authentic South Indian aroma.)"
+    },
+    {
+        id: 6,
+        name: "Saravanan T.",
+        rating: 5,
+        comment: "ரிப்பன் பக்கோடா அருமை! குழந்தைகள் விரும்பி சாப்பிட்டார்கள். (Ribbon pakoda is wonderful! Kids loved eating it.)"
+    },
+    {
+        id: 7,
+        name: "Anitha M.",
+        rating: 5,
+        comment: "பேக்கிங் மிகவும் பாதுகாப்பாக இருந்தது. தரம் மிகச் சிறப்பு. (Packaging was very safe. Quality is very excellent.)"
     }
 ];
 
